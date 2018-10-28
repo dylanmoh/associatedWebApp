@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+}
+
+.site-content-contain  {
+	background: none !important;
+}
+
+#content {
+	padding: 0 !important;
+}
+
+footer {
+	margin: 0 !important;
+}
