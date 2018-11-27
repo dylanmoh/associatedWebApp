@@ -13,3 +13,10 @@ body {
 footer {
 	margin: 0 !important;
 }
+
+.QR-code {
+	position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #dcdcdc;
+}

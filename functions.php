@@ -415,6 +415,7 @@ function twentyseventeen_scripts() {
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'login-css', get_theme_file_uri("/css/login.css"));
+	wp_enqueue_style( 'namebadge-css', get_theme_file_uri("/css/namebadge.css"));
 	wp_enqueue_style( 'main-css', get_theme_file_uri("/css/main.css"));
 
 	// Load the dark colorscheme.

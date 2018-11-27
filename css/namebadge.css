@@ -1,0 +1,45 @@
+#print-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: #fff;
+    border: solid 1px #000;
+}
+
+.profile-pic {
+    border: solid 1px #000;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-rows: 105px 60px 30px 50px auto;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.profile-info .print-name {
+    padding-top: 30px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.profile-info .print-company {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.profile-info .print-position {
+    padding-top: 0;
+}
+
+.profile-info .print-email {
+    padding-top: 25px;
+}
+
+.profile-info .print-phone {
+    padding: 0;
+}
+
+.print-name, .print-company, .print-position, .print-phone, .print-email {
+    margin: 0;
+}
