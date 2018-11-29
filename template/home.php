@@ -22,7 +22,7 @@ if($_GET["userId"])
    	$conferenceId = $result[0]->conferenceId;
    	$result = $wpdb->get_results("SELECT * FROM Conferences WHERE conferenceId = '" . $conferenceId . "';" );
    	$conferenceTitle = $result[0]->title;
-} 
+}
 if(isset($_POST['submit']))
 {
 	$updateItems = array();
@@ -32,7 +32,7 @@ if(isset($_POST['submit']))
 	if (!empty($_POST['lastName'])) {
 		$updateItems['lastName'] = $_POST['lastName'];
 	}
-	if (!empty($_FILES['profilePic'])) {
+	if ($_FILES['profilePic']['size'] != 0) {
 		require_once( ABSPATH . 'wp-admin/includes/image.php' );
 		require_once( ABSPATH . 'wp-admin/includes/file.php' );
 		require_once( ABSPATH . 'wp-admin/includes/media.php' );
@@ -108,7 +108,7 @@ QRcode::png(get_site_url() . '/print/?userId=' . $userId, 'wp-content/themes/ass
 		<p>Phone Number:</p>
 		<p>Email:</p>
 		</div>
-		<form style="width: 80%; float: left;" method="post" action="<?php echo get_site_url() . '?userId=' . $_GET["userId"]; ?>" enctype="multipart/form-data">
+		<form style="width: 80%; float: left;" method="post" action="<?php echo get_site_url() . '/?userId=' . $_GET["userId"]; ?>" enctype="multipart/form-data">
 			<input type="file" name="profilePic" />
 			<input type="text" name="firstName" />
 			<input type="text" name="lastName" />
